@@ -92,6 +92,12 @@ window.onload = function() {
             join_button.classList.remove('enabled')
           }
         }
+        join_input.addEventListener("keypress", function(event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("join_button").click();
+          }
+        });
   
         // Append everything to the body
         join_button_container.append(join_button)
@@ -176,6 +182,13 @@ window.onload = function() {
             chat_input_send.classList.remove('enabled')
           }
         }
+        
+      chat_input.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+          event.preventDefault();
+          document.getElementById("chat_input_send").click();
+        }
+      });
   
         var chat_logout_container = document.createElement('div')
         chat_logout_container.setAttribute('id', 'chat_logout_container')
