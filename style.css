@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/* below is called reset style */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #666;
+    text-align: center;
+}
+
+.parallax1 {
+    background: url(finalImages/pa1.jpg);
+    min-height: 100%;
+}
+
+.parallax2 {
+    background: url(finalImages/pa2.jpg);
+    min-height: 60%;
+}
+
+.parallax3 {
+    background: url(finalImages/pa3.jpg);
+    min-height: 40%;
+}
+
+.parallax4 {
+    background: url(finalImages/paa4.jpg);
+    min-height: 100%;
+}
+
+.parallax1,
+.parallax2,
+.parallax3,
+.parallax4 {
+    position: relative;
+    opacity: .75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* this below is very very very important as it makes all the difference in parallax effect */
+    background-attachment: fixed;
+}
+
+/* Styling the first parallax's
+		height, width and background color */
+.parallax-1 {
+    cursor: pointer;
+    width: 100%;
+    height: 600px;
+    /* background: url('https://media.geeksforgeeks.org/wp-content/uploads/20210402175040/back22.jpg'); */
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.parallax-1 :hover{
+    background-color: #262626;
+    border-radius: 25px;
+    font-weight: bolder;
+}
+/* Styling the title of first parallax */
+.parallax-1 h2 {
+    margin: auto;
+    position: relative;
+    left: 500x;
+    top: 300px;
+    width: 250px;
+    height: 32px;
+    padding: 10px;
+    /* background-color: black; */
+    color: rgb(186, 21, 21);
+    text-align: center;
+}
+.parallax-1 h2 {
+    font-weight: bolder;
+}
+
+.heading {
+    position: absolute;
+    /* color: white; */
+    color: black;
+    font-size: 550%;
+    top: 38%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-shadow: 0 0 10px black;
+}
+
+.heading-sm {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: white;
+    font-size: 250%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px black;
+}
+
+.two-col {
+    float: left;
+    width: 42%;
+    padding: 0 4%;
+    text-align: left;
+}
+
+section {
+    overflow: auto;
+    padding: 50px 80px;
+}
+
+.dark {
+    overflow: auto;
+    padding: 50px 80px;
+    background-color: #323232;
+    color: #f2f2f2;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #262626;
+    color: white;
+    text-align: center;
+}
+
+/* anything under 768 pixels takes this effect and apply below styles */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 250%;
+    }
+
+    .heading-sm {
+        font-size: 180%;
+    }
+
+    .two-col {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
+a{
+    color: aliceblue;
+}
